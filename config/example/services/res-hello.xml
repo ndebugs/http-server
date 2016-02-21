@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<packager>
+    <fields>
+        <!-- Code -->
+        <field id="code">
+            <type>String</type>
+            <required>[true]</required>
+            <filter error="true">[string match:[message value],^\[0-9\]*$]</filter>
+            <value>00</value>
+        </field>
+        <!-- Message -->
+        <field id="message">
+            <type>String</type>
+            <required>[true]</required>
+            <value>Hello\, [temp get:name]!</value>
+        </field>
+    </fields>
+</packager>

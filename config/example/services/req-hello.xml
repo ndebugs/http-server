@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<packager>
+    <fields>
+        <!-- Type -->
+        <field id="type">
+            <type>String</type>
+            <required>[true]</required>
+        </field>
+        <!-- Name -->
+        <field id="name">
+            <type>String</type>
+            <required>[true]</required>
+            <length>30</length>
+            <filter error="true">[string match:[message value],^\[A-Za-z \]*$]</filter>
+        </field>
+    </fields>
+</packager>

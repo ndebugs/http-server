@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+    <port>80</port>
+    <pretty-print>true</pretty-print>
+    <routes>
+        <route path="/example/services">
+            <request-type>GET</request-type>
+            <response-type>JSON</response-type>
+            <field-keys>
+                <field-key>type</field-key>
+            </field-keys>
+        </route>
+    </routes>
+</settings>
